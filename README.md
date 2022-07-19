@@ -1,16 +1,16 @@
-blockchain
+blockchaininfo
 ==========
 
-[![Build Status](https://travis-ci.org/alfg/blockchain.svg?branch=master)](https://travis-ci.org/alfg/blockchain)
+[![Build Status](https://travis-ci.org/mshogin/blockchaininfo.svg?branch=master)](https://travis-ci.org/mshogin/blockchaininfo)
 
-Go Client for the Blockchain Data API https://blockchain.info/api/blockchain_api
+Go Client for the Blockchain Data API https://blockchaininfo.info/api/blockchaininfo_api
 
-Documentation: https://godoc.org/github.com/alfg/blockchain
+Documentation: https://godoc.org/github.com/mshogin/blockchaininfo
 
 ## Installation
 
 ```
-go get github.com/alfg/blockchain
+go get github.com/mshogin/blockchaininfo
 ```
 
 ## Example
@@ -19,13 +19,13 @@ go get github.com/alfg/blockchain
 package main
 
 import (
-  "github.com/alfg/blockchain"
+  "github.com/mshogin/blockchaininfo"
   "fmt"
 )
 
 func main() {
 
-	c, e := blockchain.New()
+	c, e := blockchaininfo.New()
 	resp, e := c.GetAddress("162FjqU7RYdojnejCDe6zrPDUpaLcv9Hhq")
 	if e != nil {
 		fmt.Print(e)

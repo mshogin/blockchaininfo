@@ -1,4 +1,4 @@
-package blockchain
+package blockchaininfo
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	API_ROOT = "https://blockchain.info"
+	API_ROOT = "https://blockchaininfo.info"
 )
 
 type Client struct {
